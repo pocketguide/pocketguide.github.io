@@ -1,0 +1,357 @@
+@import "fonts.css";
+
+.img-icon-inicial{
+	margin: 0px 0 45px 51px;
+}
+
+
+
+.textobotao{
+		text-align: left;
+		color: #F8F8F8;
+		width: 300px;
+		height: 50%;
+		margin-top: 150px;
+		margin-left: 20px;
+		font-size: 36px;
+		font-family: 'Roboto-Medium';
+}
+.textobotoes{
+	text-align: center;
+	color: #F8F8F8;
+	width: 300px;
+	height: 50%;
+	margin-top: 10%;
+	font-size: 36px;
+	font-family: 'Roboto-Medium';
+}
+
+#container3{
+	margin-top: 14% !important;
+}
+#container2{
+	margin-top: 14% !important;
+}
+.container{
+	margin-top: 10% !important;
+}
+#barra-sessoes{
+	padding-bottom: 45%;
+	position: fixed!important; 
+	top: 0;
+	width: 100%;
+	overflow: hidden!important;
+	border-bottom-left-radius: 20%;
+	border-bottom-right-radius: 20%;
+	z-index: 99;  
+
+	}
+
+#titulosessao{
+	font-family: 'Roboto-Bold';
+	text-align: center;
+	font-size: 300%;
+	color: #FFFFFF;
+}
+
+/* IPHONE X+ SCREEN FIX FOR MATERIALIZE
+// See: https://css-tricks.com/the-notch-and-css/
+*/
+.footer-fixed footer {
+	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+
+/* CUSTOM FIXED FOOTER FOR MATERIALIZE
+*/
+.footer-fixed {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 5%;
+	min-height: 110px;
+	background-color: white;
+}
+
+	
+	.justify {
+		
+		text-align: center;
+		display:table;
+		overflow: hidden;
+		margin: 0 auto;
+}
+			li {
+				margin-left:auto;
+				margin-right:auto;
+				
+				width: 190px;
+			}
+			
+.img-icon{
+	height: 70px;
+	text-align: center;
+	justify-content: center;
+	margin-top: 10%;
+	margin-bottom: 0;
+}
+
+
+html{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+button{
+	background-color: #30566B;
+	border-radius: 10% !important;
+	border-style: none;
+	}
+p{
+    margin: 0;
+}
+b{
+	font-weight: bold !important;
+}
+
+
+button:focus{
+}
+
+
+.Button-noAbso{
+	position: static;
+	filter: drop-shadow(0px 3px 6px rgba(52, 60, 88, 0.4));
+}
+
+
+.removeMarginB{
+	margin-bottom: 0 !important;
+}
+
+.removePaddingB{
+	padding-bottom: 0 !important;
+}
+
+.paddingTop{
+	padding-top: 50px !important;
+}
+.paddingBottom{
+	padding-bottom: 50px !important;
+}
+.setPadding{
+	padding: 50px !important; 
+}
+.setPaddingsH{
+	padding-top: 50px !important;
+	padding-bottom: 50px !important;
+}
+
+.setPaddingsV{
+	padding-left: 50px !important;
+	padding-right: 50px !important;
+}
+
+
+  #divBusca{
+	background-color:white;
+	border-radius:20px;
+	width:65%;
+	height: 75px;
+	box-shadow:  0 0 0.5em grey;
+  }
+  #divBuscado{
+	background-color: rgba(151,151,151,0.3);
+	border-radius:20px;
+	width:65%;
+	height: 75px;
+	box-shadow:  0 0 0.5em grey;
+  }
+  #txtBusca{
+	  float: center;
+	background-color:transparent;
+	font-family:'Roboto-Regular';
+	font-size:36px;
+	border:none;
+	color: #7B7B7B;
+	height:42px;
+  	width:450px;
+	margin-left: 20px;
+  }
+  #txtBuscado{
+	float: center;
+  background-color:transparent;
+  font-family:'Roboto-Regular';
+  font-size:36px;
+  border:none;
+  color: #7B7B7B;
+  height:42px;
+	width:450px;
+  margin-left: 20px;
+}
+  #divFiltro{
+	background-color:white;
+	border-radius:20px;
+	width:25%;
+	height: 75px;
+	margin-left: 10%;
+	box-shadow:  0 0 0.5em grey;
+  }
+  #divFiltrado{
+	background-color: rgba(151,151,151,0.3);
+	border-radius:20px;
+	width:25%;
+	height: 75px;
+	margin-left: 10%;
+	box-shadow:  0 0 0.5em grey;
+  }
+  #txtFiltro{
+	float: left;
+  background-color:transparent;
+  font-family: 'Roboto-Medium';
+  font-size:36px;
+  border:none;
+  color: #3153F5;
+padding-top: 5px;
+margin-left: 10px;
+}
+.categorias{
+	background-color:white;
+	border-radius:20px;
+	box-shadow:  0 0 0.5em grey;
+}
+
+.div-sombra{
+	border-radius: 28px;
+    padding-bottom: 37px !important;
+    position: relative;
+}
+.menu-baixo{
+	background-color: #305C6B;
+}
+.sessoes{
+	width: 100px;
+	height: auto; 
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.tipos{
+	width: 50%;
+	height: auto; 
+	margin-top: 30px;
+}
+.nav-menu{
+	background-color: white;
+	color: #fff;
+    width: 100%;
+	height: auto;
+	box-shadow:  0 0 0.5em grey;
+}
+.buscar {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	margin-left: 91px;
+	min-height: 36px;
+	width: 42px;
+  }
+  .caption {
+	letter-spacing: 0.40px;
+	line-height: 16px;
+	margin-top: 2px;
+	min-height: 16px;
+	min-width: 42px;
+	mix-blend-mode: normal;
+	text-align: center;
+	white-space: nowrap;
+  }
+  .caption-1 {
+	letter-spacing: 0.40px;
+	line-height: 16px;
+	margin-top: 1px;
+	min-height: 16px;
+	min-width: 35px;
+	mix-blend-mode: normal;
+	text-align: center;
+	white-space: nowrap;
+  }
+  .color {
+	height: 18px;
+	margin-right: 2.51px;
+	mix-blend-mode: normal;
+	width: 18px;
+  }
+  .group-4 {
+	height: 22px;
+	margin-right: 3.0px;
+	margin-top: -1px;
+	width: 20px;
+  }
+  .group-5 {
+	height: 22px;
+	margin-right: 3.0px;
+	margin-top: -1px;
+	width: 22px;
+  }
+  .inicio {
+	letter-spacing: 0.40px;
+	line-height: 16px;
+	margin-top: 1px;
+	min-height: 16px;
+	min-width: 33px;
+	mix-blend-mode: normal;
+	text-align: center;
+	white-space: nowrap;
+  }
+  .inicio-1 {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	min-height: 38px;
+	width: 33px;
+  }
+  .menu-inferior {
+	align-items: center;
+	background-color: var(--white);
+	box-shadow: 0px 4px 3px #00000040;
+	display: flex;
+	height: 56px;
+	justify-content: flex-end;
+	min-width: 375px;
+	padding: 0 41px;
+  }
+  .sobre {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	margin-left: 90px;
+	min-height: 38px;
+	width: 35px;
+  }
+
+#barra-status{
+	padding: 14%;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+}
+#titulo{
+	font-family: 'Roboto-Medium';
+	text-align: center;
+	font-size: 300%;
+	color: #525252;
+}
+
+
+div.container4 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
