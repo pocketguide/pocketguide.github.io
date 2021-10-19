@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="../assets/favicon.png" type="image/x-icon" />
+	<script src="../js/jquery-3.5.0.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script  src="../js/main.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>LEADi</title>
+</head>
+<body>
+	<!--inicio título-->
+	<nav id="barra-status">
+		<div class="row">
+		<div class="col s1" style="display: flex; flex-direction: column; align-items: flex-start; margin-left: -10%;">
+	<a href="javascript:void(0)" onClick="history.go(-1); return false;" class="waves-effect waves-light btn" style="height: 100%; background-color: white;" ><i class="material-icons center" style="color: #3153F5;">chevron_left</i></a>
+</div>
+<div class="col s12 center-align">
+	<div id="titulo"></div>
+</div>	
+</div>
+
+</nav>
+	<!--fim título-->
+    <div class="container" style="padding-top: 20%;">
+    <div class="row">
+		<div class="col s7">
+    <!-- Modal Trigger -->
+    <a class="modal-trigger" href="#modal1">		
+		<div class="div-sombra col s6 center-align z-depth-2 shadow-demo botoesresult" style="background-color: #3153F5; margin-left: 10%;">
+				<h5 class="textobotoes" style="margin-top: 25%; margin-bottom: 10%; margin-left: 4%;">Referências</h5>
+			</div></a>
+</div>
+<div class="col s5">
+    
+<a onclick="redirecionar()"><div class="div-sombra col s10 left-align z-depth-2 shadow-demo botoesresult" style="background-color: #7686ca;">
+    <h5 class="textobotoes">Abrir Trabalho no Site Original</h5>
+</div></a>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+    <div class="col s12">
+    <div class="iframes">
+        <iframe src="" id="idIframe" width="100%" height="1500"frameborder="0"></iframe>
+</div>
+</div>
+</div>
+
+<script>
+    window.onload = function (){  // Or with jQuery
+  document.getElementById('titulo').innerHTML = sessionStorage.getItem("resultadonome");
+  document.getElementById('idIframe').src = sessionStorage.getItem("resultadolink");
+  document.getElementById('referencias').innerHTML = sessionStorage.getItem("resultadoreferencia");
+  $('.modal').modal();
+    }
+function redirecionar(){
+      window.open(sessionStorage.getItem("resultadolink"));
+  }
+    
+</script>
+
+<!-- Modal Structure - Open click link -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+      <h1 style="font-family: 'Roboto-Regular';margin-top: 5%;">Referências</h1>
+      <div id="referencias" class="textomodal" style="color: black;">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat textomodal" style="color: darkblue;">Fechar</a>
+    </div>
+  </div>
+  
+    <!--inicio do menu inferior-->
+   <footer style="margin-top: 15%;">   
+    <div class="footer-fixed">
+  
+    <div class="row" style="margin-top: 1%; margin-left: 15%;">
+      <div class="col s4" >
+      <a href="../index.html">	<img src="../assets/Inicio.svg" style="width: 30%; max-width: 90px; margin-left: 5%;"></a>
+      </div>
+      <div class="col s4">
+          <a href="../pesquisa.html">	<img src="../assets/buscar.svg" style="width: 60%; max-width: 105px; margin-top: 1%;"></a>		
+      </div>
+      <div class="col s4">
+          <a href="../sobre.html">	<img src="../assets/Sobre.svg" style="width: 32%; max-width: 95px;"></a>	
+      </div>
+    </div>
+   
+    </div> </footer>
+    <!--fim do menu inferior-->
+    </html>

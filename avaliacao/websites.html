@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="icon" href="" type="image/x-icon" />
+	<link rel="icon" href="../assets/favicon.png" type="image/x-icon" />
 	<script src="../js/jquery-3.5.0.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -27,27 +27,75 @@
 
 <div class="col s12 center-align">
 	<div id="titulosessao">Avaliação <p> na EAD</p></div>
+	<h6 id="content" style="font-family: 'Roboto-Medium'; color:white; font-size: 250%; margin-top: 1%;"></h6>
 </div>	
 </div>
 </nav>
 	<!--fim título-->
-
-    <!--inicio do menu inferior-->
 <div class="container">
-	<div class="footer-fixed">
-		<footer>
-		<div class="row" style="margin-top: 1%;">
-			<div class="col s4" >
-			<a href="../index.html">	<img src="../assets/Inicio.svg" style="width: 25%; max-width: 90px;"></a>
-			</div>
-			<div class="col s4">
-				<a href="../pesquisa.html">	<img src="../assets/Buscar.svg" style="width: 60%; max-width: 105px;"></a>		
-			</div>
-			<div class="col s4">
-				<a href="../sobre.html">	<img src="../assets/Sobre.svg" style="width: 27%; max-width: 95px;"></a>	
-			</div>
-		</div>
-		</footer>
-	</div></div>
-<!--fim do menu inferior-->
+  <h6 style="font-family: 'Roboto-Medium'; color:#525252; font-size: 350%; margin-top: 60%;">Websites</h6>	
+  
+  <table class="table">
+  
+    <tbody id="myTable">
+        
+    </tbody>
+</table>
+</div>
+
+<!--inicio da API-->
+<script>
+  function fazResultado(result){
+    teste = result;
+    var testando = document.getElementById("content").innerHTML = "Itens ("+result.length+")";
+    var table = document.getElementById('myTable')
+    for(var i =0; i <result.length;i++){
+      var row = `<tr class="avaliacao">
+       <td onclick="recebeLinha(this)" class="selecionar"> <div class="div-sombra col s5 center-align z-depth-2 shadow-demo" style="background-color: #27B692; border-radius:10%; width:650%; height:90%">
+			<img align="center" class="responsive-img tipos" src="../assets/websites.svg" style="width: 50%;"></td>
+							<td id="escrita" onclick="recebeLinha(this)">${result[i].titulo}</td>
+					  </tr>`
+			table.innerHTML += row
+    }
+  }
+  
+var requestOptions = {
+  method: 'POST',
+  redirect: 'follow'
+};
+function recebeLinha(element){
+  var el = element.closest('tr');
+  index = Array.prototype.indexOf.call(el.parentNode.children, el);
+  sessionStorage.setItem("resultadolink", teste[index].link);
+  sessionStorage.setItem("resultadonome", teste[index].titulo);
+  sessionStorage.setItem("resultadoreferencia", teste[index].referencias);
+  sessionStorage.setItem("idtrabalho", teste[index].id);
+  window.location = "../resultados/pdf.html";
+}
+
+
+fetch("http://appmidias.diamarcado.com.br/api/v1/RecursoPorTemaTipo?tema_id=12&tipo_midia=W", requestOptions)
+  .then(response => response.json())
+  .then(result => fazResultado(result))
+  .catch(error => console.log('error', error));
+	</script>
+<!--final da API-->
+
+ <!--inicio do menu inferior-->
+ <div class="footer-fixed">
+    <footer>
+    <div class="row" style="margin-top: 1%; margin-left: 15%;">
+      <div class="col s4" >
+      <a href="../index.html">	<img src="../assets/Inicio.svg" style="width: 30%; max-width: 90px; margin-left: 5%;"></a>
+      </div>
+      <div class="col s4">
+          <a href="../pesquisa.html">	<img src="../assets/buscar.svg" style="width: 60%; max-width: 105px; margin-top: 1%;"></a>		
+      </div>
+      <div class="col s4">
+          <a href="../sobre.html">	<img src="../assets/Sobre.svg" style="width: 32%; max-width: 95px;"></a>	
+      </div>
+    </div>
+    </footer>
+    </div>
+    <!--fim do menu inferior-->
 </html>

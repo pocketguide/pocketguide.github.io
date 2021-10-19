@@ -3,8 +3,26 @@
 .img-icon-inicial{
 	margin: 0px 0 45px 51px;
 }
+#barra-sessoes{
+	padding-bottom: 45%;
+	position: fixed!important; 
+	top: 0;
+	width: 100%;
+	overflow: hidden!important;
+	border-bottom-left-radius: 20%;
+	border-bottom-right-radius: 20%;
+	z-index: 99 !important;  
+	}
 
-
+	#barra-status{
+		padding: 14%;
+		background-color: white;
+		position: fixed !important;
+		top: 0;
+		width: 100%;
+		overflow:hidden;
+		z-index: 99 !important;
+	}
 
 .textobotao{
 		text-align: left;
@@ -19,13 +37,21 @@
 .textobotoes{
 	text-align: center;
 	color: #F8F8F8;
-	width: 300px;
-	height: 50%;
-	margin-top: 10%;
 	font-size: 36px;
 	font-family: 'Roboto-Medium';
+	margin-top: 10%;
 }
-
+.textomodal{
+	text-align: left;
+	color: #0000;
+	font-size: 36px;
+	font-family: 'Roboto-Bold';
+	margin-top: 10%;
+}
+.botoesresult{
+	height: 200%;
+}
+	
 #container3{
 	margin-top: 14% !important;
 }
@@ -35,17 +61,6 @@
 .container{
 	margin-top: 10% !important;
 }
-#barra-sessoes{
-	padding-bottom: 45%;
-	position: fixed!important; 
-	top: 0;
-	width: 100%;
-	overflow: hidden!important;
-	border-bottom-left-radius: 20%;
-	border-bottom-right-radius: 20%;
-	z-index: 99;  
-
-	}
 
 #titulosessao{
 	font-family: 'Roboto-Bold';
@@ -171,22 +186,22 @@ button:focus{
 	  float: center;
 	background-color:transparent;
 	font-family:'Roboto-Regular';
-	font-size:36px;
+	font-size:280%;
 	border:none;
 	color: #7B7B7B;
-	height:42px;
-  	width:450px;
+	height:100%;
+  width:85%;
 	margin-left: 20px;
   }
   #txtBuscado{
 	float: center;
   background-color:transparent;
   font-family:'Roboto-Regular';
-  font-size:36px;
+  font-size:300%;
   border:none;
   color: #7B7B7B;
-  height:42px;
-	width:450px;
+  height:100%;
+  width:75%;
   margin-left: 20px;
 }
   #divFiltro{
@@ -209,10 +224,10 @@ button:focus{
 	float: left;
   background-color:transparent;
   font-family: 'Roboto-Medium';
-  font-size:36px;
+  font-size:270%;
   border:none;
   color: #3153F5;
-padding-top: 5px;
+padding-top: 3%;
 margin-left: 10px;
 }
 .categorias{
@@ -331,14 +346,7 @@ margin-left: 10px;
 	width: 35px;
   }
 
-#barra-status{
-	padding: 14%;
-	background-color: white;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	overflow: hidden;
-}
+
 #titulo{
 	font-family: 'Roboto-Medium';
 	text-align: center;
@@ -346,6 +354,12 @@ margin-left: 10px;
 	color: #525252;
 }
 
+.titulo{
+	font-family: 'Roboto-Bold';
+	text-align: center;
+	font-size: 800%;
+	color: #525252;
+}
 
 div.container4 {
     margin: 0;
@@ -354,4 +368,46 @@ div.container4 {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%) }
+
+	#escrita{
+		font-family: 'Roboto-Bold';
+		text-align: left;
+	font-size: 250%;
+	color: #000000;
+	padding: 5%;
+	padding-left:20%
+	}
+
+table{
+	 margin-top: 10%;
+	
+}
+
+.selecionar{
+	width: 4%;
+}
+.interacao:hover{
+	background-color: #FF9900;
+}
+.fundamentos:hover{
+	background-color: #F7744A;
+}
+.estrategias:hover{
+	background-color: #01B549;
+}.equipe:hover{
+	background-color: #AE8EF1;
+}.material:hover{
+	background-color: #677FF1;
+}.avaliacao:hover{
+	background-color: #27B692;
+}
+.cliques:hover{
+	background-color: #3153F5;
+}
+.iframes{
+	width: 100%;
+	height: 100%;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
 
